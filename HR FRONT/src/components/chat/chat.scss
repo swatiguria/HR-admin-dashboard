@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+
+.showText{
+    font-family: $fontPoppins;
+}
+
+.chatBox {
+    min-height: 5rem;
+    max-height: 7rem;
+    overflow: scroll;
+}

@@ -1,0 +1,15 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.counterContainer {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 17px 16px rgba(17, 123, 200, 0.07);
+    border-radius: 18px;
+}
+
+.noOfList {
+    @include popIn18;
+    color: #2D3462;
+
+}

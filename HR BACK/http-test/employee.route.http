@@ -1,0 +1,72 @@
+#ADD EMPLOYEE
+POST http://localhost:5000/employees/add-employee
+Content-Type: application/json 
+
+{
+    "firstName": "swati",
+    "lastName": "guria",
+    "email": "swhtyu@gmail.com",
+    "photo": "",
+      "employeeImage": "1.png",
+      "contact": "8167049093",
+      "address": "Kolkata",
+      "gender" : "female",
+      "marital": "married",
+      "dateOfBirth": "24.02.2001",
+      "about": "hello swati",
+      "designation": "intern",
+      "department": "sd",
+      "manager":"rick",
+      "teamMates":"as",
+      "skills":"b.tech",
+      "education": [
+       { "university": "hit",
+        "degree": "graduate",
+        "field": "engineering",
+        "startDate":"22.12.20",
+        "endDate":"22.12.22",
+        "description":"fine"}
+      ],
+      "workExperience":[
+        {
+            "title":"intern",
+            "employmentType":"full time",
+            "companyName":"hit",
+            "location":"jcjkj",
+            "startDate": "cjhshcj",
+            "endDate":"cjscjsjn",
+            "description":"cbjhsbhjcs",
+            "industry":"uywcuywcuyg"
+        }
+      ]
+}
+
+###
+#PASSWORD
+POST http://localhost:5000/employees/set-password
+Content-Type:application/json
+
+{
+  "email":"swatgffytguhiu@gmail.com"
+}
+
+###
+#show list
+
+###
+
+GET http://localhost:5000/employees/search?name=swati&designation=intern
+
+###
+GET http://localhost:5000/employees//show-individual-employee/645cb046fd263ebad0692ef9
+
+###
+# edit
+
+PATCH  http://localhost:5000/employees/edit-individual-employee/6461e557481f2851d1be3ebf
+Content-Type: application/json
+
+{
+  "role":["employee","admin","TL"]
+}
+

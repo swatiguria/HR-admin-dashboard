@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+$gradientBg: linear-gradient(
+  208.88deg,
+  rgba(185, 106, 248, 0.14) 17.78%,
+  rgba(254, 147, 22, 0.14) 46.09%,
+  rgba(37, 18, 255, 0.14) 78.16%
+);
+
+$background-color: #697ce4;
+$text-color: #fff;
+$grey-color: #828c94;
+$text-gray: #929a9e;
+$text-blue: #2d3462;
+$card-title-color: #474e77;
+$remember-color: #5a6085;
+$slate-color: #abafb1;
+$fontPoppins: "Poppins", sans-serif;
+$fontRaleway: "Raleway", sans-serif;
+
+$addBtnBg: linear-gradient(111.25deg, #ffac2f -22.04%, #de3a06 55.67%);
+$submitBtnBg: linear-gradient(109.03deg, #49e5a3 -4.62%, #48c41c 52.74%);
+$cancelBtnBg: linear-gradient(
+  102.4deg,
+  rgba(238, 238, 238, 0.9) -38.19%,
+  rgba(104, 112, 140, 0.9) 45.04%
+);
+$deleteBtnBg: #ec6072;

@@ -1,0 +1,132 @@
+@import "../../styles/_mixins.scss";
+@import "../../styles/variables";
+
+.sidebar-text {
+  padding-right: 1rem;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 9px 15px 44px rgba(0, 0, 0, 0.08);
+  background: url("../../assets/sideBar/cornerGradient.svg") no-repeat top/100%,
+    url("../../assets/sideBar/cornergradient2.svg") no-repeat top/100%, #fff;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+.rotate-arrow {
+  transform: scaleX(-1);
+  transition-duration: 0.5s;
+}
+
+.not-rotate-arrow {
+  transition-duration: 0.5s;
+}
+
+.css-1p823my-MuiListItem-root {
+  align-items: flex-start !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+  box-shadow: none !important;
+  background-color: unset !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before {
+  background-color: unset !important;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded {
+  min-height: 0 !important;
+}
+
+.css-o4b71y-MuiAccordionSummary-content.Mui-expanded,
+.css-o4b71y-MuiAccordionSummary-content {
+  margin: 0px !important;
+  margin-top: 10px !important;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+  min-height: 0 !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper {
+  transform: rotate(270deg) !important;
+  margin-top: 10px !important;
+}
+
+.css-yw020d-MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  transform: rotate(360deg) !important;
+}
+
+.icon-bg {
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 9px 15px 44px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.background-design {
+  padding: 0.5rem;
+}
+
+.active-icon {
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 9px 15px 44px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-text-list {
+  color: #4f5473;
+  opacity: 0.4;
+  margin: 0.4rem 0;
+}
+
+.sidebar-text-list.active {
+  opacity: 1;
+}
+
+.responsive-sidebar {
+  position: absolute;
+  top: 6%;
+}
+
+.menu-bar {
+  display: block !important;
+  color: #697ce4;
+  margin: 0.5rem;
+  font-size: 2rem;
+}
+
+.hide-list {
+  display: none !important;
+}
+
+.icon-btn {
+  display: none !important;
+  position: sticky;
+  z-index: 100;
+  width: 3.7rem;
+}
+
+@media (min-width: 300px) {
+  .responsive-sidebar {
+    top: 4rem;
+  }
+}
+
+@media (min-width: 950px) {
+  .responsive-sidebar {
+    position: static;
+  }
+
+  .icon-btn {
+    display: block !important;
+  }
+
+  .menu-bar {
+    display: none !important;
+  }
+
+  .icon-bg {
+    display: block;
+  }
+}

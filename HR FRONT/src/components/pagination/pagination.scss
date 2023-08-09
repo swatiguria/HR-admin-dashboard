@@ -1,0 +1,46 @@
+.pagination-container {
+  display: flex;
+  list-style-type: none;
+
+  .pagination-item {
+    padding: 0 0.8rem;
+    height: 32px;
+    text-align: center;
+    margin: auto 0.1rem;
+    color: #697CE4;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    border-radius: 0.5rem;
+    line-height: 1.43;
+    font-size: 13px;
+    min-width: 32px;
+    &.dots:hover {
+      background-color: transparent;
+      cursor: default;
+    }
+    &:hover {
+      background-color: #697ce4;
+      color: white;
+      cursor: pointer;
+    }
+    &.selected {
+      background-color: #697ce4;
+      color: white;
+    }
+
+    &.disabled {
+      pointer-events: none;
+
+      .arrow {
+        color: grey;
+      }
+
+      &:hover {
+        background-color: transparent;
+        cursor: default;
+      }
+    }
+  }
+}

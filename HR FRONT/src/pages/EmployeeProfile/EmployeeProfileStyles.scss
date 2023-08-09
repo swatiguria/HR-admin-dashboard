@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.change_Image {
+  @include pop14;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: larger !important;
+  color: #474e77 !important;
+  min-width: 115px !important;
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  background: $background-color;
+  color: #fff !important;
+  margin: 0 1rem;
+}
+
+.css-1aquho2-MuiTabs-indicator {
+  opacity: 0;
+}
+
+.css-145v6pe-MuiButtonBase-root-MuiTabScrollButton-root{
+    display: flex !important;
+}
+
+@media (min-width:770px) {
+    .css-145v6pe-MuiButtonBase-root-MuiTabScrollButton-root{
+        display: none !important;
+    }
+}

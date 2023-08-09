@@ -1,0 +1,25 @@
+#add leave
+POST http://localhost:5000/leave-settings/add-leave
+Content-Type: application/json
+
+{
+    "leaveType":"Medical Leaves",
+    "noOfDays": 5,
+    "status":true,
+    "canItBeForwarded":true,
+    "forwardedDays":2
+}
+
+###
+GET http://localhost:5000/leave-settings/all-leave
+
+###
+DELETE http://localhost:5000/leave-settings/delete-leave/
+
+###
+PATCH http://localhost:5000/leave-settings/edit-leave/645206aa2964ae8b40095e79
+Content-Type: application/json
+
+{
+    "forwardedDays": 7
+}

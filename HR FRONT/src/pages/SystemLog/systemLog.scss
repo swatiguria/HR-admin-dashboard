@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.activityCard {
+    background-color: $text-color;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.title {
+    color: $card-title-color;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.docSvg {
+    max-width: 1rem;
+}
+
+.content {
+    color: $text-blue;
+}
+
+// .approveBtn {
+//     background: $submitBtnBg;
+// }
+
+// .rejectBtn {
+//     background: $addBtnBg;
+// }

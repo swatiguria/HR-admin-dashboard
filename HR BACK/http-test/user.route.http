@@ -1,0 +1,32 @@
+
+# FORGOT PASSWORD
+POST http://localhost:5000/user/forgot-password
+Content-Type: application/json
+
+{
+    "email": "swatiguriahit@gmail.com"
+}
+
+###
+# Register
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "firstName":"Ashutosh", 
+    "lastName":"Patro", 
+    "email":"ashutosh@itobuz.com", 
+    "password":"1234",
+    "role":[
+        "employee"
+    ]
+
+}
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+ "email":"swatiguriahit@gmail.com", 
+ "password":"123"
+}

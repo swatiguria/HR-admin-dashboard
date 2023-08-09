@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.heading {
+  color: $card-title-color;
+  font-weight: 600;
+}
+
+label {
+  @include pop12;
+  color: $card-title-color;
+}
+
+.inputTxt {
+  font-family: $fontPoppins;
+  font-size: 16px;
+  background: transparent;
+}
+
+.upload {
+  @include pop12;
+  color: $card-title-color;
+  height: 8rem;
+}

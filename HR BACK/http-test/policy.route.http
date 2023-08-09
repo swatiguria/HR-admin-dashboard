@@ -1,0 +1,21 @@
+#add policy
+POST http://localhost:5000/company-policy/add-policy
+Content-Type: application/json 
+
+{
+    "title":"hllw"
+}
+
+###
+PATCH http://localhost:5000/company-policy/edit-policy/64757ef5e83153eb22634884
+Content-Type: application/json 
+
+{
+    "title":"hghgyughugyhgi"
+}
+
+### 
+DELETE http://localhost:5000/company-policy/delete-policy/64757ef5e83153eb22634884
+
+###
+GET http://localhost:5000/company-policy/all

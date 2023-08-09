@@ -1,0 +1,26 @@
+#adding holiday
+POST http://localhost:5000/holiday/add-holiday
+Content-Type: application/json 
+
+{
+    "date": "2023-10-23",
+    "occassion":"Durga puja"
+
+}
+###
+#edit holiday
+
+PATCH http://localhost:5000/holiday/edit-holiday/644b5a1aac8d597b290d19cd
+Content-Type: application/json
+
+{
+    "date":"2023-05-22"
+}
+
+###
+#delete holiday
+DELETE http://localhost:5000/holiday/delete-holiday/644b5b3a916d06aa711f361b
+
+###
+#show holidays
+GET http://localhost:5000/holiday/all

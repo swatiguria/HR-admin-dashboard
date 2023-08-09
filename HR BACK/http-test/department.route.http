@@ -1,0 +1,25 @@
+POST http://localhost:5000/department/add-department
+Content-Type: application/json
+
+{
+    "departmentName": "ct",
+    "departmentDescription": "it will deliver the best services"
+}
+
+###
+PATCH http://localhost:5000/department/edit/6450b4f7d53fb863402da911
+Content-Type: application/json
+
+{
+    "departmentName": "QA",
+    "departmentDescription": "Quality Assurancee"
+}
+
+###
+POST http://localhost:5000/department/transfer
+Content-Type: application/json
+
+{
+   "employees":["644b96c42c0f244a9b927c55","644b968d85f3a66e0b7364e6"],
+   "department":"HR"
+}

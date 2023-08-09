@@ -1,0 +1,33 @@
+#add
+POST http://localhost:5000/leaves/add-employees-on-leave
+Content-Type: application/json
+
+{
+
+    "employeeName":"Swiuguygui",
+    "leaveType":"medical",
+    "dateRange":"2023-05-04 to 2023-05-14",
+    "totalNoOfDays":7,
+    "reason":"jkkjckjc",
+    "approvedBy":"tfcgvhbjuyguftgchvjuiygcfvbjhugy",
+    "user":"645cb046fd263ebad0692ef9",
+    "isHalfDay":false,
+    "approvalStatus":"Rejected"
+
+}
+###
+DELETE http://localhost:5000/leaves/delete-employees-on-loave/64535a3519bd469ce78ea843
+
+###
+GET http://localhost:5000/leaves/all
+
+###
+GET http://localhost:5000/leaves/get-individual-leaves/647591e90bd8436e417ea142
+
+###
+PATCH http://localhost:5000/leaves/edit-indivisual-leave/6475989af804ff85ca59f42a
+Content-Type: application/json
+
+{
+    "approvalStatus":"Rejected"
+}

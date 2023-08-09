@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+
+.loginBg {
+    background:url("../../assets/loginPage/BG.png") no-repeat right 50%/145%, $gradientBg;
+    background-blend-mode: hue;
+    height: 100%;
+}
+
+.cardTitle {
+    font-family: $fontRaleway;
+    color: $card-title-color;
+}
+
+.inputLabel {
+    @include pop12;
+}
+
+.cardText {
+    @include pop14;
+    color: $card-title-color;
+}
+
+.border {
+    border-color: $slate-color;
+}
+
+.loginBtn {
+    background-color: $background-color;
+    font-size: 16px;
+    color: $text-color;
+}
+
+.forgetPass {
+    color: $background-color;
+}
+
+.remember {
+    color: $remember-color;
+}
+
+.check:checked {
+    accent-color: $background-color;
+}
+
+// left
+.ideas {
+    background:url("../../assets/loginPage/mainCircle.png") bottom/100%,url("../../assets/loginPage/greyBg.png")  ;
+    background-repeat: no-repeat;
+}
+
+.hrColor {
+    background-color: #FF133E;
+    border-radius: 0.5rem;
+    padding: 0rem 0.2rem 0rem 0.2rem;
+}
+
+.dashboardText {
+    color: #B8BBCF;
+    @include pop14;
+}
+
+.ideasText {
+    color: #DFE1EA;
+    font-family: $fontPoppins;
+}
+
+//footer
+.footer {
+    font-family: $fontPoppins;
+}
+
+.hradText {
+    color: #E55D54;
+}
